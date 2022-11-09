@@ -1,0 +1,14 @@
+@page
+
+@model AdditionViewModel
+@using (Html.BeginForm("Addition", "Home", FormMethod.Post)){
+    
+    @Html.EditorFor(x => x.A)
+    @Html.EditorFor(x => x.B)
+
+    <div style="margin-top: 6px;">
+        @Html.DisplayFor(x => x.Result)
+    </div>
+    
+    <input type="submit" value="Add" />
+}

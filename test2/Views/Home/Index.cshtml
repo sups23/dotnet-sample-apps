@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model InformationViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+
+    @* <p>
+        Name: @ViewBag.name <br>
+        Address: @ViewBag.address <br>
+        Phone: @ViewBag.phone <br>
+    </p> *@
+
+    @* <p>
+        Name: @ViewData["name"] <br>
+        Address: @ViewData["address"] <br>
+        Phone: @ViewData["phone"] <br>
+    </p> *@
+
+    <p>
+        Name: @Model.Name <br>
+        Address: @Model.Address <br>
+        Phone: @Model.Phone <br>
+    </p>
+
+</div>
